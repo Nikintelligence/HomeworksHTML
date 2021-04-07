@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрейшн</title>
+    <meta name="progect" content="profi web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- подключение css -->
+
+
+    <link rel="stylesheet" href="css/flex-grid.css">
+    <link rel="stylesheet" href="css/form-style.css">
+</head>
+
+  <body>
+    <header>
+        <div class="navbar">
+            <a class="logo" href="trd.html">Bakerful</a>
+            <nav>
+                <a href="main.html">Главная</a>
+                <a href="sec.html">Заказать</a>
+                <a href="form.html">Регистрация</a>
+            </nav>
+        </div>
+        <form>
+            <input type="search" placeholder="Поиск">
+        </form>
+    </header>
+    <form>
+      <div class="container">
+        <h1>Регистрация</h1>
+        <p>Заполните, чтобы создать аккаунт.</p>
+        <hr>
+
+        <label for="email"><b>Как вас зовут?</b></label>
+        <input type="text" placeholder="Ваше имя" name="nme" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Ваш Email" name="email" required>
+
+
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="ВВедите пароль" name="psw" required>
+
+        <label for="psw-repeat"><b>Повторите пароль</b></label>
+        <input type="password" placeholder="Введите снова" name="psw-repeat" required>
+        <hr>
+
+        <p>Регистрируясь, вы принимаете <a href="#">правила пользования ресурсом</a>.</p>
+        <button type="submit" class="registerbtn">Зарегистрироваться</button>
+      </div>
+
+      <div class="container signin">
+        <p>Уже есть аккаунт? <a href="#">Войти</a>.</p>
+      </div>
+    </form>
+
+  </body>
+</html>

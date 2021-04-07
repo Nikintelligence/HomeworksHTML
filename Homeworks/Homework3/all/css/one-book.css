@@ -1,0 +1,42 @@
+.pagination span{
+  display: inline-block;
+  width: 50px; /*  ширина */
+  height: 50px; /*  высота */
+  line-height: 50px;
+/* рамка: толщина, стиль, цвет */
+  border: 3px solid #123C69;
+  /* скругление углов */
+  border-radius: 50%;
+  text-align: center;
+  color: #123C69;
+  margin: 1rem;
+}
+
+.pagination span.active{
+  background-color: #BAB2B5;
+}
+
+.info{
+  display: flex;
+  font-weight: bold;
+}
+
+.info-author {
+
+}
+
+.info-genre {
+  margin-left: auto;
+}
+
+.book {
+  color: #123C69;
+}
+
+.back{
+  background: url(1569163751_i-13.jpeg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}

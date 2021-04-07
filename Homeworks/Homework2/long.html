@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+      <meta charset="utf-8">
+      <meta name="author" content="web ifmo">
+      <meta name="description" content="Регистрейшн">
+      <meta name="keywords" content="участник">
+      <title>Регстрейшн</title>
+</head>
+<body>
+  <section>
+    <h2>Регистрация на мероприятие</h2>
+
+    <form enctype="multipart/form-data" action="#" method="post">
+      <div>
+        <input autofocus type="text" placeholder="введите ваше имя" name="name" >
+      </div>
+      <div>
+        <input autofocus type="text" placeholder="введите фамилию" name="surname" >
+      </div>
+      <div>
+        <input autofocus type="text" placeholder="введите отчество" name="3name" >
+      </div>
+      <div>
+        <label for="role">Кем вы являетесь?</label> 
+        <select id="role" name="genre" multiple>
+        <option value="role1"> Гость </option>
+        <option value="role2"> Организатор </option>
+        <option value="role3"> Участник </option>
+        <option value="role4"> Персонал </option>
+      </select>
+
+      </div>
+      <div>
+        <label for="comm"> Коментарий к роли на мероприиятие/свой вариант </label>
+        <input maxlength="2" maxlength="250" id="comm" type="text" name="comm">
+      </div>
+      <div>
+        <label for="count">Укажите количество необходимых вам билетов (до 3)</label>
+        <input min="1" max="3" id="count" type="number" name="count">
+      </div>
+      <div>
+
+        <textarea name="dreams" placeholder="Ваши пожелания на мероприятие"></textarea><
+      </div>
+      <div>
+        <label for="doc"> Загрузить фото документа, удостоверяющего личность </label>
+        <input  id="doc" type="file" name="doc" accept="image/*">
+      </div>
+      <div>
+        <label for="pages"> Загрузить ваше(и) приглашение(я) </label>
+        <input  id="pages" type="file" name="pages[]" multiple>
+      </div>
+      <div>
+        <span> Ваш возраст </span>
+        <label> <input type="checkbox" value="1" name="age[]"> до 18-21 </label>
+        <label> <input type="checkbox" value="2" name="age[]"> до 22-25 </label>
+        <label> <input type="checkbox" value="3" name="age[]"> до 25-30 </label>
+        <label> <input type="checkbox" value="4" name="age[]"> до 30-35</label>
+        <label> <input type="checkbox" value="5" name="age[]"> до 35-40 </label>
+        <label> <input type="checkbox" value="6" name="age[]"> до 40-50</label>
+        <label> <input type="checkbox" value="7" name="age[]"> до 50-65</label>
+
+      </div>
+      <div>
+        <span> Посещали ли вы подобные мероприятия? </span>
+        <label> <input type="radio" name="radio" value="1"> Да </label>
+        <label> <input type="radio" name="radio" value="0"> Нет </label>
+      </div>
+
+      <button type="submit" name="button"> Отправить </button>
+      <input type="reset" name="" value="Отменить">
+
+    </form>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+@import "styles.css";
+
+html {
+    font-size: 20px;
+}
+
+body {
+    color: #d9baba;
+    background-color: #141414;
+    margin: 0;
+    display: grid;
+    grid-template:
+        "header header header"
+        "main main main"
+        "footer footer footer" 100px
+        /minmax(15%, 20%) 1fr 1fr;
+}
+
+header {grid-area: header;}
+
+main {grid-area: main; }
+footer {grid-area: footer; }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+header {
+    background: #0d0a0a;
+    display: flex;
+}
+
+header .navbar {
+    display: flex;
+    line-height: 80px;
+    justify-content: space-between;
+}
+
+header nav a {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 30px;
+    border-bottom: 4px solid transparent;
+}
+header nav a:hover,
+header nav a:focus {
+    border-bottom-color: white;
+}
+
+header .logo {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+header form {
+    margin-left: auto;
+    line-height: 80px;
+    margin-right: 2rem;
+}
+
+header input {
+    border-style: none;
+    outline-style: none;
+    font-size: 1.2rem;
+    color: #3E2723;
+}
+
+
+
+
+footer {
+    background: #0d0a0a;
+}
+
+.card {
+    background: #141414;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  body {
+    grid-template:
+        "header"
+        "main"
+        "footer" 100px
+        / auto;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header form {
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 599px){
+  body {
+    grid-template:
+        "header"
+        "main"
+        "footer" 100px
+        / auto;
+  }
+
+  header form {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+article {
+  margin: 2rem;
+}
+
+footer {
+  padding: 20px;
+  height: 150px;
+}

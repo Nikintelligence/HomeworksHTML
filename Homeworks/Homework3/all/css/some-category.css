@@ -1,0 +1,28 @@
+.book {
+  /* тень блока */
+  /* смещение по ширине, смещ по высоте, радиус размытия, растяжение, цвет тени */
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  margin-bottom: 1rem;
+  color: #123C69;
+}
+
+.book h3 {
+  /* Тень текста */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.book a {
+  /* display: inline; - строчный */
+  /* display: block; - блок */
+  /* display: inline-block; - блок-строк */
+  /* display: none; - скрытие элемента*/
+  display: block;
+  background-color: #123C69;
+  color: #EEE2DC;
+  text-align: center;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
